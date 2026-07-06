@@ -1,57 +1,62 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
 body {
-  font:16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#000;
-  padding: 50px;
-  background-color: #f5f5f5;
+    font: 16px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    padding: 50px;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding:0;
 }
 
-h2{
-    font-size: 20px;
+h2 {
     color: #494949;
-
+    margin: 0;
+    padding: 0;
 }
 
-
-
-
-.side-bar{
+.side-bar {
     width: 280px;
     position: fixed;
     top: 50px;
     left: 50px;
+
+    border-right: 1px solid #ccc;
+
 }
 
-.side-bar h1{
+.side-bar h1 {
     display: inline;
     font-size: 28px;
-
 }
-.side-bar p{
+
+.side-bar p {
     margin: 0;
     font-size: 16px;
     color: #222222;
     font-weight: 400;
 }
 
-.side-bar a{
+.side-bar a {
     text-decoration: none;
 }
 
-.side-bar img{
+.side-bar img {
     display: block;
     width: 180px;
     height: 180px;
     border-radius: 2px;
     object-fit: cover;
     object-position: 80% 20%;
+    margin-bottom: 10px;
 }
-.side-bar .social-links{
+
+.side-bar .social-links {
     margin-top: 20px;
 
 }
-.side-bar .social-links ul{
+
+.side-bar .social-links ul {
     padding: 0;
     margin: 0;
     display: flex;
@@ -60,55 +65,70 @@ h2{
     flex-wrap: wrap;
 }
 
-.side-bar .social-links li{
+.side-bar .social-links li {
     list-style: none;
     border: 1px solid #ccc;
-    padding: 6px;
+    padding: 10px;;
     border-radius: 4px;
 }
 
-.social-links p{
+.social-links p {
     margin: 10px 0;
 }
-.side-bar .social-links li:hover{
+
+.side-bar .social-links li:hover {
     background-color: #f5f5f5;
     border-color: #999;
 }
 
-.side-bar .social-links img{
+.side-bar .social-links img {
     width: 32px;
-    height: 32px;;
+    height: 32px;
+    margin: 0;
 }
 
 
+/* =============================== main content area ========================= */ 
 
-.main-content{
+.main-content {
     margin-left: 350px;
+    padding: 50px 20px;
 }
 
-.welcome h2{
-    margin-top: 0;
+.welcome{
+    margin-bottom: 50px;
+}
+.welcome p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #222222;
 }
 
 .hire{
-    margin: 50px 0;
+    margin-bottom: 50px;
+}
+.hire p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #222222;
 }
 
-@media (max-width: 768px){
-    .side-bar{
-        position: static;
+@media (max-width: 768px) {
+    .side-bar {
+        position: relative;
+        top: 10;
+        left: 10;
         width: 100%;
-        /* padding: 20px; */
-        text-align: left;
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
+      
+        margin-bottom: 50px;
     }
-    
-    .main-content{
+
+    .main-content {
         margin-left: 0;
-        /* padding: 20px; */
+        padding: 50px;
     }
-    .side-bar .social-links ul{
+
+    .side-bar .social-links ul {
         justify-content: flex-start;
     }
 }
